@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial Narrow';
+    background-color: #444;
+}
+
+img {
+    float: right;
+}
+
+p {
+    color:darkblue;
+}
+
+ol li {
+    font-style: italic;
+    color:darkcyan;
+}
+
+ul li {
+    font-style: italic;
+    color:rgb(47, 117, 207);
+}
+
+h1 {
+    color: rgb(247, 199, 44);
+}
+
+.container {
+  border: 2px solid black;
+  width: 200px;
+  display: inline;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.red {
+  background-color: red;
+}
+
+.black {
+  background-color: black;
+}
+
+.text-container {
+  background-color: rgb(250, 194, 109);
+  padding: 10px;
+  margin: 5px;
+  width: 500px;
+  border-radius: 5%;
+}
