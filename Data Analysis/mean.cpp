@@ -24,6 +24,5 @@ int main()
     for (auto x : numbers)
         cout << x << " ";
 
-    cout << endl << "Mean: " << accumulate(numbers.begin(), numbers.end(), 0)/numbers.size();
-       
+    cout << endl << "Mean: " << (accumulate(numbers.begin(), numbers.end(), 0) * 1.0)/numbers.size();  
 }
