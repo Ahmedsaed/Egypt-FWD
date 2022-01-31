@@ -1,4 +1,4 @@
-# Data Analysis
+# Data Analysis - Lecture 1
 
 ## Types of data
 - Quantitative:
@@ -23,3 +23,52 @@ In looking at categorical variables, we found Gender, Marital Status, Zip Code a
 
 Alternatively, the Letter Grade or Survey Ratings have a rank ordering associated with it, as ordinal data. If you receive an A, this is higher than an A-. An A- is ranked higher than a B+, and so on... Ordinal variables frequently occur on rating scales from very poor to very good. In many cases we turn these ordinal variables into numbers, as we can more easily analyze them, but more on this later!
 
+---
+
+## Quantitative Variables
+There are four main aspects used to describe quantitative variables:
+
+- Measures of Center
+- Measures of Spread
+- Shape of the Distribution
+- Outliers
+
+## Measures of Center
+Calculating measures of Center
+
+- Medians
+- Modes
+- Means
+
+## Measures of Spread
+Calculating measures of Spread
+
+- Range
+- Interquartile Range
+- Standard Deviation
+- Variance
+
+## Shape
+The distribution of our data is frequently associated with one of the three shapes:
+
+1. Right-skewed
+1. Left-skewed
+1. Symmetric (frequently normally distributed)
+
+Depending on the shape associated with our dataset, certain measures of center or spread may be better for summarizing our dataset.
+
+When we have data that follows a normal distribution, we can completely understand our dataset using the mean and standard deviation.
+
+However, if our dataset is skewed, the 5 number summary (and measures of center associated with it) might be better to summarize our dataset.
+
+## Outliers  
+Outliers have a larger influence on measures like the mean than on measures like the median. We learned that we should work with outliers on a situation by situation basis. Common techniques include:
+
+1. At least note they exist and the impact on summary statistics.
+1. If typo - remove or fix
+1. Understand why they exist, and the impact on questions we are trying to answer about our data.
+1. Reporting the 5 number summary values is often a better indication than measures like the mean and standard deviation when we have outliers.
+1. Be careful in reporting. Know how to ask the right questions.
+
+## Histograms and Box Plots 
+Use histograms and box plots to visualize our quantitative data. Identifying outliers and the shape associated with the distribution of our data are easier when using a visual as opposed to using summary statistics.
