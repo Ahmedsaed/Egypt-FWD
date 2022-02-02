@@ -39,7 +39,7 @@ int main()
     cout << "Q3: " << q3 << endl;
     cout << "Max: " << max << endl;
     cout << "Range: " << (max - min) << endl;
-    cout << "Interquartile Range (IQR): " << (q3- q1) << endl;
+    cout << "Interquartile Range (IQR): " << (q3 - q1) << endl;
 }
 
 double median(vector<int> numbers)
