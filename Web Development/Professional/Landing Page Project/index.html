@@ -1,0 +1,74 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu anchors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Types Of Cake 🍰</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Butter Cake" class="your-active-class">
+      <div class="landing__container">
+        <h2>Butter Cake</h2>
+        <p>Any recipe for cake that begins "cream butter and sugar" is a butter cake. After the creaming, you add eggs to aerate the batter a bit, flour (and sometimes another liquid, like milk) to give it structure and texture, and baking powder or baking soda to ensure that it rises in the oven. Different types of cake batter within the butter cake family include chocolate, white, yellow and marble; for white and yellow cakes coloring typically depends on whether they have whole eggs, or extra egg yolks in them (yellow cake) or egg whites only (white cake).</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Pound Cake" class="">
+      <div class="landing__container">
+        <h2>Pound Cake</h2>
+        <p>Pound cake is a relative of butter cake. It's so called because it can be measured as a matter of proportion: a pound of butter, a pound of sugar, a pound of eggs, and a pound of flour. In some pound cake recipes, you'll see the eggs separated and the egg whites whipped and folded into the batter, to leaven it; in other recipes you'll find leaveners like baking soda and baking powder, bringing it well into the butter-cake fold. These cakes are usually very lightly flavored and served plain or topped with a simple glaze or water icing. A pound cake is usually baked in a loaf or Bundt pan. Many coffee cakes, sour cream cakes, and fruit crumb cakes are variations of pound cake.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Genoise Cake" class="">
+      <div class="landing__container">
+        <h2>Genoise Cake</h2>
+        <p>In Italy and France, a sponge cake is called genoise; in genoise, whole eggs are beaten with sugar until they're thick and ribbony, and then flour (and sometimes butter) is added and the batter is baked; the result is wonderful baked in a round cake pan and simply frosted, but genoise is also pliable enough to be baked in a jelly-roll pan and rolled up into a roulade.</p>
+
+        <p>Genoise lacks much assertive flavor of its own, but it is often used to construct layered or rolled cakes when a lighter texture than a butter cake is desired. To add flavor and moisture, genoise cake layers are always moistened with a flavored syrup, and they are often sliced into thin horizontal layers and stacked with rich fillings such as buttercream. These layer cakes, common in the coffeehouses of Europe, are called "European-style" to distinguish them from American-style butter layer cakes, which generally have fewer, thicker layers.</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Biscuit Cake">
+      <div class="landing__container">
+        <h2>Biscuit Cake</h2>
+        <p>Biscuit (always pronounced the French way as bees-kwee) cakes are another type of sponge cake containing both egg whites and yolks, but, unlike genoise, the whites and yolks are whipped separately and then folded back together. This creates a light batter that's drier than a genoise but holds its shape better after mixing. For this reason, it's often used for piped shapes such as ladyfingers. If baked in a tube pan like an angel food cake, it makes a very chewy sponge cake that was popular in the early 20th century but has since fallen out of favor. However, it's still known in a slightly different form as the classic Passover sponge cake, in which the flour is replaced by matzoh cake meal and potato starch.</p>
+      </div>
+    </section>
+    <section id="section5" data-nav="Angel Food Cake">
+      <div class="landing__container">
+        <h2>Angel Food Cake</h2>
+        <p>Angel food cakes are made with egg whites alone and no yolks. The whites are whipped with sugar until very firm before the flour is gently folded in, resulting in a snowy-white, airy, and delicate cake that marries beautifully with fruit. Most angel food cakes have a spongy, chewy quality derived from their relatively high sugar content and the absence of egg yolks. Baked in ungreased two-piece tube pans, angel food cakes are cooled by being inverted, since this type of cake would collapse if cooled right-side-up in the pan or if removed from the pan while still warm. There's also no butter here, so the cake is fat free.</p>
+      </div>
+    </section>
+    <section id="section6" data-nav="Chiffon Cake">
+      <div class="landing__container">
+        <h2>Chiffon Cake</h2>
+        <p>This fairly recent American creation was invented by a salesman who sold the recipe to General Mills, which spread the recipe through marketing materials in the 1940s and 1950s. A classic chiffon cake is kind of a cross between an oil cake and a sponge cake. It includes baking powder and vegetable oil, but the eggs are separated and the whites are beaten to soft peaks before being folded into the batter. This creates a cake with a tender crumb and rich flavor like an oil cake, but with a lighter texture that's more like a sponge cake. Chiffon cakes can be baked in tube pans like angel food cakes or layered with fillings and frostings.</p>
+      </div>
+    </section>
+  </main>
+  <button onclick="topFunction()" id="toTopBtn" class="btn-hide" title="Scroll to top">Back To Top</button>
+  <footer class="page__footer">
+    <p>Created By Ahmed Saed</p>
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+</html>
