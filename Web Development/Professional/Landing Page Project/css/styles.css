@@ -10,10 +10,6 @@
 
 
 /* ---- Base Rules ---- */
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background: rgb(136,203,171);
     background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
@@ -78,7 +74,7 @@ section {
     display: inline-block;
 }
 
-.navbar__menu .menu__link {
+.menu__link {
     display: block;
     padding: 1em;
     font-weight: bold;
@@ -95,6 +91,11 @@ section {
     background: #333;
     color: #fff;
     transition: ease 0.3s all;
+}
+
+.nav--active {
+    background: #333;
+    color: #fff;
 }
 
 /* Header Styles */

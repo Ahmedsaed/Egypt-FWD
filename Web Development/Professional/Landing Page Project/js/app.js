@@ -38,7 +38,7 @@ function isInViewport(section) {
 function buildNav() {
     let navInnerHTML = "";
     for (let section of sections) {
-        navInnerHTML += `<li><a class="menu__link" href="#${section.id}">${section.getAttribute("data-nav")}</a></li>\n`;
+        navInnerHTML += `<li><a id=${section.getAttribute("data-nav").split(' ')[0]} class="menu__link" href="#${section.id}">${section.getAttribute("data-nav")}</a></li>\n`;
     }
     navItems.innerHTML = navInnerHTML;
 }
@@ -60,8 +60,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.addEventListener('scroll', () => {
     // Set visible section as active
     for (let section of sections) {
-        if (isInViewport(section)) section.classList.add('your-active-class');
-        else section.classList.remove('your-active-class');
+        if (isInViewport(section)) {
+            section.classList.add('your-active-class');
+            document.getElementById(section.getAttribute("data-nav").split(' ')[0]).classList.add('nav--active');
+        }
+        else {
+            section.classList.remove('your-active-class');
+            document.getElementById(section.getAttribute("data-nav").split(' ')[0]).classList.remove('nav--active');
+        }
     }
 
     // show/hide navbar based on scrolling activity
@@ -83,5 +89,7 @@ window.onscroll = () => {
 
 // Scroll to top on button click
 function topFunction() {
-  document.body.scrollTop = 0;
+    document.querySelector('body').scrollIntoView({
+        behavior: 'smooth'
+    });
 }
