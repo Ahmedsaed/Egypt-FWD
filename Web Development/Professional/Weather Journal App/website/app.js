@@ -3,7 +3,7 @@ let d = new Date();
 let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
 
 // Personal API Key for OpenWeatherMap API
-const apiKey = '<apiKey>&units=imperial';
+const apiKey = '<apiKey>' + '&units=imperial';
 
 // Global Variables
 let baseURL = 'http://api.openweathermap.org/data/2.5/weather?zip=';
